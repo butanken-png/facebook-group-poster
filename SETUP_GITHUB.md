@@ -12,7 +12,7 @@ Tạo repository công khai tên:
 
 `facebook-group-poster`
 
-Trong `package.json`, thay `YOUR_GITHUB_USERNAME` bằng username GitHub của bạn ở 3 chỗ:
+Trong `package.json`, thay `butanken-png` bằng username GitHub của bạn ở 3 chỗ:
 
 - `repository.url`
 - `homepage`
@@ -29,7 +29,7 @@ git init
 git add .
 git commit -m "Facebook Group Poster V3.2.1"
 git branch -M main
-git remote add origin https://github.com/YOUR_GITHUB_USERNAME/facebook-group-poster.git
+git remote add origin https://github.com/butanken-png/facebook-group-poster.git
 git push -u origin main
 ```
 
