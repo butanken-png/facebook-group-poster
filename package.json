@@ -1,0 +1,40 @@
+{
+  "name": "facebook-group-poster",
+  "version": "3.2.1",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win",
+    "release": "electron-builder --win --publish always"
+  },
+  "devDependencies": {
+    "electron": "^38.1.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "vn.coffeeposter.app",
+    "productName": "Facebook Group Poster",
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "YOUR_GITHUB_USERNAME",
+      "repo": "facebook-group-poster",
+      "releaseType": "release",
+      "publishAutoUpdate": true
+    }
+  },
+  "dependencies": {
+    "electron-updater": "^6.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/facebook-group-poster.git"
+  },
+  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/facebook-group-poster"
+}
